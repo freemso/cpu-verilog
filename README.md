@@ -197,63 +197,63 @@ CPU设计的第一步应当根据指令系统建立数据路径，再定义各�
 
 `rst` 信号发出，系统初始化完成，PC=0，准备执行第一条指令
 
-![s1](screenshots/1.png)`addi, rs=0, rt=1, imm=1 => R[1]=1`，将R[0]的值加上1结果赋给R[1]，可以看到在波形图中，R[1]的值变为了1
+![s1](screenshots/1.PNG)`addi, rs=0, rt=1, imm=1 => R[1]=1`，将R[0]的值加上1结果赋给R[1]，可以看到在波形图中，R[1]的值变为了1
 
-![s1](screenshots/2.png)
+![s1](screenshots/2.PNG)
 
 add, rs=0, rt=1, rd=2 => R[2]=1，将R[0]的值加R[1]的值结果赋给R[2]，可以看到波形图中R[2]的值变为了1
 
-![s1](screenshots/3.png)
+![s1](screenshots/3.PNG)
 
 sub, rs=0, rt=1, rd=3 => R[3]=-1，将R[0]的值减去R[1]的值结果赋给R[3]，可以看到波形图中R[3]的值变成了-1
 
-![s1](screenshots/4.png)ori, rs=1, rt=4, imm=2 => R[4]=3，将R[1]的值与2做「或」操作结果赋给R[4]，可以看到波形图中R[4]的值变成了3
+![s1](screenshots/4.PNG)ori, rs=1, rt=4, imm=2 => R[4]=3，将R[1]的值与2做「或」操作结果赋给R[4]，可以看到波形图中R[4]的值变成了3
 
-![s1](screenshots/5.png)
+![s1](screenshots/5.PNG)
 
 andi, rs=1, rt=5, imm=1 => R[5]=1，将R[1]的值与1做「与」操作结果赋给R[5]，可以看到波形图中R[5]的值变成了1
 
-![s1](screenshots/6.png)
+![s1](screenshots/6.PNG)
 
 or, rs=1, rt=4, rd=6 => R[6]=3，将R[1]的值与R[4]的值做「或」操作，结果赋给R[6]，可以看到波形图中R[6]的值变成了3
 
-![s1](screenshots/7.png)and, rs=1, rt=4, rd=7 => R[7]=1，将R[1]的值与R[4]的值做「与」操作，结果赋给R[7]，可以看到波形图中R[7]的值变成了1
+![s1](screenshots/7.PNG)and, rs=1, rt=4, rd=7 => R[7]=1，将R[1]的值与R[4]的值做「与」操作，结果赋给R[7]，可以看到波形图中R[7]的值变成了1
 
-![s1](screenshots/8.png)
+![s1](screenshots/8.PNG)
 
 slt, rs=4, rt=1, rd=8 => R[8]=0，将R[4]的值与R[1]的值比大小，结果赋给R[8]，R[4]>R[1]，可以看到波形图中R[8]的值变成了0
 
-![s1](screenshots/9.png)
+![s1](screenshots/9.PNG)
 
 slti, rs=3, rt=9, imm=1 => R[9]=1，将R[3]的值与1比大小，结果赋给R[9]，因为-1<1，所以可以看到波形图中R[9]的值变成了1
 
-![s1](screenshots/10.png)
+![s1](screenshots/10.PNG)
 
 sw, base=R[1], rt=4, offset=1 => Data[2]=3，将R[9]的值加上1，得到的结果作为内存地址，将R[4]的值存入此内存地址中，可以看到波形图中Data[2]的值变成了3
 
-![s1](screenshots/11.png)
+![s1](screenshots/11.PNG)
 
 j, address=3 << 2 => jump to 12，跳转到第12条指令，可以看到波形图中的PC值变成了12
 
-![s1](screenshots/12.png)
+![s1](screenshots/12.PNG)
 
 add, rs=0, rt=1, rd=11 => R[11]=1，这条指令将不会运行，图中的R[11]还是-1而不是1
 
 lw, base=R[1], rt=10, offset=1 => R[10]=3，将内存地址中的Data[2]的值存到R[10]中去，注意到上面我们在Data[2]中存储过一个3，可以在波形图中看到R[10]的值变成了3
 
-![s1](screenshots/13.png)
+![s1](screenshots/13.PNG)
 
 nop，什么都没有发生，PC继续增加
 
-![s1](screenshots/14.png)
+![s1](screenshots/14.PNG)
 
 nop，什么都没有发生，PC继续增加
 
-![s1](screenshots/15.png)
+![s1](screenshots/15.PNG)
 
 nop，什么都没有发生，PC增加到顶后不再增加
 
-![s1](screenshots/16.png)
+![s1](screenshots/16.PNG)
 
 ## 体会与感受
 
