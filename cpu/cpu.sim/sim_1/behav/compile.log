@@ -1,0 +1,15 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Desktop/cpu/cpu.srcs/sources_1/new/cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu
+INFO: [VRFC 10-311] analyzing module inst_mem
+INFO: [VRFC 10-311] analyzing module control_unit
+INFO: [VRFC 10-311] analyzing module reg_file
+INFO: [VRFC 10-311] analyzing module ext
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-311] analyzing module data_mem
+INFO: [VRFC 10-311] analyzing module next_pc
+INFO: [VRFC 10-311] analyzing module mux_32
+INFO: [VRFC 10-311] analyzing module mux_5
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Desktop/cpu/cpu.srcs/sim_1/new/test_cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_cpu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Desktop/cpu/cpu.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

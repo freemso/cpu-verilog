@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Desktop/cpu/cpu.sim/sim_1/synth/timing/test_cpu_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Desktop/cpu/cpu.srcs/sim_1/new/test_cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_cpu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Desktop/cpu/cpu.sim/sim_1/synth/timing/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+WARNING: [VRFC 10-1195] overwriting previous definition of module glbl [D:/Desktop/cpu/cpu.sim/sim_1/synth/timing/glbl.v:6]
